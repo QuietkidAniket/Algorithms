@@ -1,6 +1,29 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+
+template<typename T>
+int partition(T& arr, int p, int r){
+    T x = arr[r];
+    int i = p -1;
+    for(int j = p; j < r -1){
+        if(arr[j] <= x ){
+            i++;
+            swap(arr[i], arr[j]);
+        }
+    }
+    swap(arr[i+1], arr[r]);
+    return i +1;
+}
+
+template<typename T>
+void quicksort(T& arr, int p , int r){
+    int q = partition(arr, p, r);
+    quicksort(arr, p, q-1);
+    quicksort(arr, q + 1, r);
+}
+
+
 template <typename T>
 vector<T> quicksort(vector<T> array){
     if(array.size() < 2){
