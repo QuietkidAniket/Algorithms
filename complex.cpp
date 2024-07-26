@@ -37,10 +37,12 @@ public:
 
 }; // end of complex class
 
+
 complex &conj(const complex &obj){
     complex new_obj(obj.re, -obj.im);
     return new_obj;
 }
+
 complex &operator-(const complex &a, const complex &b)
 {
     complex new_obj(a.re - b.re, a.im - b.im);
