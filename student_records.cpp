@@ -57,7 +57,7 @@ class dynamic_array{
     T* end(){
         return data + n;   
     }
-    const T* end(){
+    const T* end() const{
         return data + n;
     }
     friend dynamic_array<T> operator+(const dynamic_array<T>& arr1, dynamic_array<T>& arr2){
@@ -71,7 +71,7 @@ class dynamic_array{
             return "";
         }
 
-        std::ostreamstring os;
+        std::ostringstream os;
         os << data[0];
         for(int i = 1; i < n; i++){
             os << sep << data[i];
@@ -83,8 +83,8 @@ class dynamic_array{
 struct student{
     std::string name;
     int standard;
-}
-std::ostream& operator<<(std::ostrean& os, const student& s){
+};
+std::ostream& operator<<(std::ostream& os, const student& s){
     return (os << "[Name : " << s.name <<  ", Standard : " << s.standard << "]");   
 }
 
