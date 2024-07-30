@@ -8,4 +8,3 @@ if [[ -f "$filename" ]]; then
 else
     echo "Error! $filename  not found"
 fi
-
