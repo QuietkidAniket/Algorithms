@@ -1,6 +1,18 @@
 {
     "files.associations": {
         "socket.h": "c",
-        "vector": "cpp"
-    }
+        "vector": "cpp",
+        "__hash_table": "c",
+        "__node_handle": "c",
+        "__tree": "c",
+        "forward_list": "c",
+        "list": "c",
+        "iostream": "cpp",
+        "queue": "cpp",
+        "iosfwd": "cpp",
+        "ios": "cpp",
+        "unordered_map": "cpp"
+    },
+    "editor.fontFamily": "SFMono-Light, Menlo, Monaco, 'Courier New', monospace"
+
 }
