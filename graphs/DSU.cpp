@@ -24,7 +24,7 @@ class DisjointSet{
     DisjointSet(int n){
         rank.resize(n+1, 0);
         parent.resize(n+1);
-        size.resize(n+1);
+        size.resize(n+1, 1);
         // for 1 based indexing and 0 based indexing both
         for(int i = 0 ;i <= n ;i++){
             parent[i]= i;
